@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>自己紹介ページ</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="fuwaimg.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body id="text">
+  <header>
+    <div class="container wrapper">
+
+      <img src="img/komichi.jpg" class="heroimg">
+
+    </div> <!-- end container -->
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+<h2 class="h2-a">計算ツールを作りたい</h2>
+
+<script>
+function CheckData() {
+    if (document.getElementById("height").value == "") {
+    alert('個人情報を入れて下さい');
+    return false;
+    }
+    else if(document.getElementById("weight").value == "") {
+    alert('個人情報を入れて下さい');
+    return false;
+    }
+    else if(document.getElementById("bfp").value == "") {
+    alert('個人情報を入れて下さい');
+    return false;
+    }
+    else {
+    alert('個人情報が入力されました');
+    return true;
+    }
+}
+</script>
+
+<select name=”month”>
+<option value=”jan”>1月</option>
+<option value=”feb”>2月</option>
+<option value=”mar”>3月</option>
+<option value=”apr”>4月</option>
+</select>
+
+
+
+
+
+
+
+
+  <footer>
+  
+
+<p>身長ｃｍ<input type="number" id="height"></p>
+<p>体重ｋｇ<input type="number" id="weight"></p>
+<p>体脂肪率％<input type="number" id="bfp"></p>
+<p><button type="button" onclick="CheckData()">入力チェック</button></p>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+      <a href="javascript:history.back()" class="home">HOME</a>
+  </footer>
+
+  <script src="fuwaimg.js"></script>
+</body>
+
+</html>
